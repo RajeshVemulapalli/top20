@@ -30,7 +30,10 @@ public class FirstNodeOfLoop {
 		int length = 1;
 		ListNode slow1 = slow.next;
 		while(slow1!= slow) 
+		{
 			++length;
+			slow1 = slow1.next;
+		}
 		
 		//find length node from end of list
 		ListNode forward, back;
